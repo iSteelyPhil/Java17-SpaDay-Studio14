@@ -16,7 +16,7 @@ public class UserController {
         model.addAttribute(new User());
         return "user/add";
     }
-
+//
     @PostMapping
     public String processAddUserForm(Model model, @ModelAttribute @Valid User user, Errors errors/*, String verify*/) {
         if (!errors.hasErrors() /*&& user.getPassword().equals(verify)*/) {
